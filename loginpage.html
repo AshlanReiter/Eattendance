@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eAttendance login page</title>
+	<link rel="stylesheet" href="signuploginpage.css">
+</head>
+<body>
+  <center>
+    <h1 class="headtext">eATTENDANCE</h1>
+	<p class="prgrhptext">Record Attendance Easier, Faster, and Error-free</p>
+	
+	<div class="cntnr1">
+	  <h2 class="hdtxt2">Login</h2>
+	  <form action="homepage2.html" autocomplete="on">
+	    <label for="email" class="mlnm">Email Address</label><br>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br>
+		
+		<label for="password" class="psswrd">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+		
+		<input type="checkbox" id="show-password" onclick="this.form.password.type = this.checked ? 'text' : 'password'">
+        <label for="show-password" class="shwpsswrd">Show Password</label><br>
+		
+		<input type="submit" value="Login" class="lgnbttn">
+	  </form>
+	  <p class="accprgrph">Need an account? <a href="signuppage.html" class="acclnk">SIGN UP HERE</a>
+		
+      <p class="or">-OR-</p>
+	  
+	  <a href="homepage.html"><button class="bttn">ENTER AS GUEST</button></a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+      @media (max-width: 600px) {
+       .cntnr1 {
+        width: 90%;
+         }
+      }
+	  
+	  body {
+	    background-color: #0f0f0f;
+	  }
+	
+	  .headtext {
+	    font-family: 'Roboto', sans-serif; 
+        font-size: 38px;
+        font-weight: 900;
+        color: white; 
+	  }
+	  
+	  .prgrhptext {
+	    font-family: 'Roboto', sans-serif;
+	    color: grey;
+		margin-bottom: 50px;
+	  }
+	  
+	  .cntnr1 {
+	    max-width: 400px;
+		border-radius: 25px;
+	    background-color: #1c1c1c;
+		padding: 30px;
+		margin-bottom: 50px;
+	  }
+	  
+	  .hdtxt2 {
+	    font-family: 'Roboto', sans-serif; 
+        font-size: 30px;
+        font-weight: 800;
+        color: white; 
+		margin-bottom: 50px;
+	  }
+	  
+	  #email {
+	    width: 300px;
+		height: 35px;
+		font-family: 'Roboto', sans-serif; 
+        font-size: 15px;
+		font-weight: 550;
+        color: white; 
+		outline: 1px solid white;
+		background-color: rgba(0,0,0,0);
+		border-radius: 10px;
+		border: none;
+		margin-bottom: 30px;
+	  }
+	  
+	  .mlnm {
+	    margin-right: 190px;
+		font-family: 'Roboto', sans-serif; 
+        font-size: 18px;
+		font-weight: 500;
+        color: white; 
+	  }
+	  
+	  .psswrd {
+	    margin-right: 225px;
+		font-family: 'Roboto', sans-serif; 
+        font-size: 18px;
+		font-weight: 500;
+        color: white; 
+	  }
+	  
+	  #password {
+	    width: 300px;
+		height: 35px;
+		font-family: 'Roboto', sans-serif; 
+        font-size: 15px;
+		font-weight: 550;
+        color: white; 
+		outline: 1px solid white;
+		background-color: rgba(0,0,0,0);
+		border-radius: 10px;
+		border: none;
+	  }
+	  
+	  .lgnbttn {
+	    width: 300px;
+		height: 40px;
+		border-radius: 10px;
+		font-family: 'Roboto', sans-serif; 
+        font-size: 15px;
+		font-weight: 550;
+		outline: 1px solid white;
+		border: none;
+		transition: background-color 0.3s ease, color 0.3s ease;
+	  }
+	  
+	  .lgnbttn:hover {
+	    background-color: black;
+		color: white;
+		outline: 1px solid black;
+		cursor: pointer;
+	  }
+	  
+	  #show-password {
+	    margin-bottom: 30px;
+		cursor: pointer;
+	  }
+	  
+	  .shwpsswrd {
+	    margin-right: 170px;
+		font-family: 'Roboto', sans-serif; 
+        font-size: 15px;
+        color: white;margin-bottom: 50px;
+	  }
+	  
+	  .accprgrph {
+	    color: white;
+		font-family: 'Roboto', sans-serif; 
+        font-size: 15px;
+		margin-bottom: 40px;
+	  }
+	  
+	  .acclnk {
+	    color: white;
+		font-family: 'Roboto', sans-serif; 
+        font-size: 15px;
+	  }
+	  
+	  .acclnk:hover {
+	    color: black;
+	  }
+	  
+	  .or {
+	    color: grey;
+		font-family: 'Roboto', sans-serif; 
+        font-size: 15px;
+		margin-bottom: 40px;
+	  }
+	  
+	  .bttn {
+	    width: 200px;
+		height: 40px;
+		font-family: 'Roboto', sans-serif; 
+        font-size: 15px;
+		font-weight: 550;
+		outline: 2px solid black;
+		border: none;
+		border-radius: 100px;
+		transition: background-color 0.3s ease, color 0.3s ease;
+	  }
+	  
+	  .bttn:hover {
+	    background-color: black;
+		color: white;
+		outline: 2px solid white;
+		cursor: pointer;
+	  }
+	  
+	  .srnm {
+	    margin-right: 220px;
+		font-family: 'Roboto', sans-serif; 
+        font-size: 18px;
+		font-weight: 500;
+        color: white;
+	  }
+	  
+	  #srnm {
+	    width: 300px;
+		height: 35px;
+		font-family: 'Roboto', sans-serif; 
+        font-size: 15px;
+		font-weight: 550;
+        color: white; 
+		outline: 1px solid white;
+		background-color: rgba(0,0,0,0);
+		border-radius: 10px;
+		border: none; 
+		margin-bottom: 30px;
+	  }

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Sheet</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="attendance_sheet.css">
+</head>
+<body>
+    <a href="classes.html" class="back">&lt; BACK</a>
+    <div class="container">
+        <h1>12-Bonifacio</h1>
+        <h2>S.Y. 2024-2025</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        <form action="#" method="get">
+                            <label for="select-date">Select a Date: </label>
+                            <input type="date" id="select-date" name="date">
+                        </form>
+                    </th>
+                    <th id="date-1"></th>
+                    <th id="date-2"></th>
+                    <th id="date-3"></th>
+                    <th id="date-4"></th>
+                    <th id="date-5"></th>
+                    <th id="date-6"></th>
+                    <th id="date-7"></th>
+                </tr>
+                <tr>
+                    <td>No</td>
+                    <td>Student Name</td>
+                    <td id="day-1"></td>
+                    <td id="day-2"></td>
+                    <td id="day-3"></td>
+                    <td id="day-4"></td>
+                    <td id="day-5"></td>
+                    <td id="day-6"></td>
+                    <td id="day-7"></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="student-blue"><a href="Student_pf2.html">Student 1</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="student-blue"><a href="Student_pf2.html">Student 2</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+    <td>3</td>
+    <td class="student-blue"><a href="Student_pf2.html">Student 3</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>4</td>
+    <td class="student-blue"><a href="Student_pf2.html">Student 4</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>5</td>
+    <td class="student-blue"><a href="Student_pf2.html">Student 5</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>6</td>
+    <td class="student-blue"><a href="Student_pf2.html">Student 6</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>7</td>
+    <td class="student-blue"><a href="Student_pf2.html">Student 7</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>8</td>
+    <td class="student-pink"><a href="Student_pf2.html">Student 8</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>9</td>
+    <td class="student-pink"><a href="Student_pf2.html">Student 9</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+                <tr>
+                    <td>Total</td>
+                    <td>9</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="schldys">Total <br>Number of<br>School Days:<br>0</div><div class="hhh"></div>
+	
+	<div class="bttmcntnr">
+          <p class="bttmprgrph">To create your class attendance 
+              <a href="signuppage.html" class="lnk">SIGN UP HERE</a></p>
+    </div>
+
+    <script>
+        function showDatePicker() {
+            const datepicker = document.getElementById('datepicker');
+            if (datepicker.style.visibility === 'visible') {
+                datepicker.style.visibility = 'hidden';
+            } else {
+                datepicker.style.visibility = 'visible';
+            }
+        }
+
+        function activateLink() {
+            const date = document.getElementById('calendar-date').value;
+            
+        }
+
+        function updateDates() {
+            const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const today = new Date();
+
+            for (let i = 0; i < 7; i++) {
+                const date = new Date();
+                date.setDate(today.getDate() + i);
+
+                const dateCell = document.getElementById(`date-${i + 1}`);
+                const dayCell = document.getElementById(`day-${i + 1}`);
+
+                dateCell.textContent = date.toLocaleDateString('en-US', {
+                    month: '2-digit',
+                    day: '2-digit',
+                    year: '2-digit',
+                });
+                dayCell.textContent = daysOfWeek[date.getDay()];
+            }
+        }
+
+        window.onload = updateDates;
+    </script>
+</body>
+</html>

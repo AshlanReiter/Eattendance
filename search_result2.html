@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eAttendance Home page</title>
+	<link rel="stylesheet" href="search_result2.css">
+</head>
+<body>
+  <center>
+  <div class="cntnr">
+    <br>
+	<a href="homepage2.html" class="back">&lt; BACK</a>
+	<div class="picCntnr" onclick="toggleDropdown()">
+	<img src="pfp.jpg" id="pic" alt="Profile Picture">
+	<div id="dropdown">
+		<img src="pfp.jpg" alt="Profile Picture">
+		<div class="info">
+			<div class="name">Francis Varona</div>
+			<div class="number">6416407</div>
+		</div>
+		<a href="loginpage.html">Log out</a>
+	</div>
+  </div>
+	
+    <a href="homepage2.html" class="hd">eATTENDANCE</a>
+    <p class="prgrph">Record Attendance Easier, Faster, and Error-free</p>
+  </div>
+    
+  <form>
+    <input type="search" id="srch" placeholder="  search..." name="srch">
+    <button id="srchbttn">ENTER</button>
+  </form>
+  </center>
+  
+ <a href="homepage2.html" class="aa">
+ <div class="ab">
+    <div class="ac">
+      <img src="pfp.jpg" id="ad">
+    </div>
+    <div class="ae">
+      <div class="af">Francis Varona</div>
+      <div class="ag">6416407</div>
+    </div>
+  </div>
+  </a>
+  
+    <a href="class_form.html" class="crtlnk">Create New Class</a>
+  
+  <script>
+	function toggleDropdown() {
+		const dropdown = document.getElementById('dropdown');
+		dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+	}
+
+	window.addEventListener('click', function(event) {
+		const picContainer = document.querySelector('.picCntnr');
+		const dropdown = document.getElementById('dropdown');
+		if (!picContainer.contains(event.target)) {
+			dropdown.style.display = 'none';
+		}
+	});
+  </script>
+</body>
+</html>

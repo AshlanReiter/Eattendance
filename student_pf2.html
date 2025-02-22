@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+	<link rel="stylesheet" href="student_pf.css">
+</head>
+<body>
+  <center>
+    <div class="divpf">
+	<br>
+	  <a href="attendance_sheet2.html" class="back">&lt; BACK</a>
+	  <div class="divimg">
+	    <img src="pfp.jpg" id="pic">
+	  </div>
+	  <div class="divtxt">
+	    <p id="name">Student 1</p>
+		<p id="grnsec">12-Bonifacio</p>
+	  </div>
+	</div>
+	
+	<div class="divpal">
+	  <p class="a">Present:        </p><p id="a"></p>
+	  <p class="b">Absent:         </p><p id="b"></p>
+	  <p class="c">Late:           </p><p id="c"></p>
+	  <p class="d">Late & Present: </p><p id="d"></p>
+	</div>
+	
+	<div class="bttmcntnr">
+          <p class="bttmprgrph">To create your class attendance 
+              <a href="signuppage.html" class="lnk">SIGN UP HERE</a></p>
+    </div>
+	
+	<script>
+    let a = 10;
+	let b = 20;
+	let c = 100;
+	let d = a + c;
+    document.getElementById("a").innerHTML = a;
+	document.getElementById("b").innerHTML = b;
+	document.getElementById("c").innerHTML = c;
+	document.getElementById("d").innerHTML = d;
+    </script>
+  <br>
+  </center>
+</body>
+</html>

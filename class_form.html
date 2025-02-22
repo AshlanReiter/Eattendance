@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eAttendance Create Class</title>	<link rel="stylesheet" href="class_form.css">
+</head>
+<body>
+  <center>
+  <br>
+  <h1 class="hd"><a href="homepage2.html" class="hmpglnk">eATTENDANCE</a></h1>
+  <p class="prgrph">Record Attendance Easier, Faster, and Error-free</p>
+  <form class="frm" action="homepage2.html">
+    <h2 class="hd2">Create Your Class</h2>
+	
+	<label for="color" class="color">Select a color:</label>
+    <input type="color" id="color" name="color" value="#ffffff"><br>
+	
+	<label for="schlyr" class="schlyr">School Year: </label>
+    <input type="text" id="schlyr" name="schlyr" placeholder="0000-0000" required><br>
+	
+	<label for="grnsec" class="grnsec">Grade and Section: </label>
+    <input type="text" id="grnsec" name="grnsec" placeholder="12-Bonifacio" required>
+	
+	<p class="txt">--List of Students--</p><br>
+	
+	<label for="names" class="names">Student Name (Male):</label><br>
+    <textarea id="names" name="names" placeholder="Enter names here..."></textarea><br>
+	
+	<label for="names2" class="names2">Student Name (Female):</label><br>
+    <textarea id="names2" name="names2" placeholder="Enter names here..."></textarea>
+	
+	<input type="submit" value="Create Class" class="crtclss">
+  </form>
+</body>
+</html>

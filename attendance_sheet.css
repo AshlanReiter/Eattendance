@@ -1,0 +1,225 @@
+body {
+    background-color: #0f0f0f;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+h2 {
+	font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 5px;
+	color: grey;
+}
+
+.date-display {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: grey;
+}
+
+.back {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 2px solid white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.edit-btn {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    background-color: yellow;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+	outline: 2px solid black;
+	width: 90px;
+}
+
+.edit-btn:hover {
+    background-color: black;
+    color: yellow;
+	outline: 2px solid yellow;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+th {
+    font-size: 20px;
+}
+
+td {
+    font-size: 18px;
+}
+
+.btn-group button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.select-date-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.select-date-btn:hover {
+    background-color: #45a045;
+}
+
+.student-blue {
+    background-color: blue;
+    color: white;
+}
+
+.student-pink {
+    background-color: pink;
+    color: black;
+}
+
+.select-date-container {
+    position: absolute;
+    bottom: -340px;
+    right: 30px;
+}
+
+.datepicker {
+    position: absolute;
+    bottom: -290px;
+    right: 30px;
+    visibility: hidden;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.datepicker input[type="date"] {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.datepicker-btn {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+	text-decoration: none;
+}
+		
+.datepicker-btn:hover {
+	background-color: #4CAF50;
+}
+		
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.schldys {
+	color: white;
+	background-color: #1c1c1c;
+	width: 150px;
+	border-radius: 10%;
+	margin: 0;
+	padding: 20px;
+	position: absolute;
+	bottom: -400px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.bttmcntnr {
+  background-color: #1c1c1c;
+  padding: 10px;
+  position:fixed;
+  bottom:0;
+  width:100%;
+}
+
+.bttmprgrph {
+  color: white;
+  font-family: 'Arial', sans-serif; 
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.lnk {
+  color: white; 
+  font-size: 15px;
+  transition: none;
+  text-decoration: underline;
+}
+
+.lnk:hover {
+  color: black; 
+  font-size: 15px;
+}
+
+.hhh {
+	margin-bottom: 250px;
+}

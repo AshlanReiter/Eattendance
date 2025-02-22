@@ -1,0 +1,129 @@
+body {
+    background-color: #0f0f0f;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.date-display {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: grey;
+}
+
+.back {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 2px solid white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid grey;
+}
+
+th {
+    font-size: 20px;
+}
+
+td {
+    font-size: 18px;
+}
+
+.btn-group button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.present {
+    background-color: green;
+    color: white;
+}
+
+.present:hover {
+    background-color: #45a045;
+}
+
+.absent {
+    background-color: red;
+    color: white;
+}
+
+.absent:hover {
+    background-color: #d03434;
+}
+
+.status {
+    font-weight: bold;
+    font-size: 18px;
+    color: yellow;
+}
+
+.finish-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.finish-btn:hover {
+    background-color: #45a045;
+}
+
+.gender-label {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}

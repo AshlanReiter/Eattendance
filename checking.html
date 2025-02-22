@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking of Attendance</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="checking.css">
+</head>
+<body>
+    <a href="attendance_sheet.html" class="back">&lt; BACK</a>
+    <div class="container">
+        <h1>Checking of Attendance</h1>
+        <div class="date-display" id="current-date"></div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3" class="gender-label">Male</td>
+                </tr>
+                <tr>
+                    <td>Student 1</td>
+                    <td class="status" id="status1">Not Selected</td>
+                    <td class="btn-group">
+                        <button class="present" onclick="markPresent(1)">Present</button>
+                        <button class="absent" onclick="markAbsent(1)">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Student 2</td>
+                    <td class="status" id="status2">Not Selected</td>
+                    <td class="btn-group">
+                        <button class="present" onclick="markPresent(2)">Present</button>
+                        <button class="absent" onclick="markAbsent(2)">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Student 3</td>
+                    <td class="status" id="status3">Not Selected</td>
+                    <td class="btn-group">
+                        <button class="present" onclick="markPresent(3)">Present</button>
+                        <button class="absent" onclick="markAbsent(3)">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Student 4</td>
+                    <td class="status" id="status4">Not Selected</td>
+                    <td class="btn-group">
+                        <button class="present" onclick="markPresent(4)">Present</button>
+                        <button class="absent" onclick="markAbsent(4)">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Student 5</td>
+                    <td class="status" id="status5">Not Selected</td>
+                    <td class="btn-group">
+                        <button class="present" onclick="markPresent(5)">Present</button>
+                        <button class="absent" onclick="markAbsent(5)">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Student 6</td>
+                    <td class="status" id="status6">Not Selected</td>
+                    <td class="btn-group">
+                        <button class="present" onclick="markPresent(6)">Present</button>
+                        <button class="absent" onclick="markAbsent(6)">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Student 7</td>
+                    <td class="status" id="status7">Not Selected</td>
+                    <td class="btn-group">
+                        <button class="present" onclick="markPresent(7)">Present</button>
+                        <button class="absent" onclick="markAbsent(7)">Absent</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" class="gender-label">Female</td>
+                </tr>
+                <tr>
+                    <td>Student 8</td>
+                    <td class="status" id="status8">Not Selected</td>
+                    <td class="btn-group">
+                        <button class="present" onclick="markPresent(8)">Present</button>
+                        <button class="absent" onclick="markAbsent(8)">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Student 9</td>
+                    <td class="status" id="status9">Not Selected</td>
+                    <td class="btn-group">
+                        <button class="present" onclick="markPresent(9)">Present</button>
+                        <button class="absent" onclick="markAbsent(9)">Absent</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <a href="attendance_sheet.html" class="finish-btn">Finish</a>
+    <br><br>
+
+    <script>
+        function markPresent(studentId) {
+            const statusElement = document.getElementById(`status${studentId}`);
+            statusElement.textContent = "Present";
+            statusElement.style.color = "green";
+        }
+
+        function markAbsent(studentId) {
+            const statusElement = document.getElementById(`status${studentId}`);
+            statusElement.textContent = "Absent";
+            statusElement.style.color = "red";
+        }
+
+        const dateDisplay = document.getElementById('current-date');
+        const today = new Date();
+        const formattedDate = `${today.getDate().toString().padStart(2, '0')}/${(today.getMonth() + 1).toString().padStart(2, '0')}/${today.getFullYear()}`;
+        dateDisplay.textContent = `Date: ${formattedDate}`;
+    </script>
+</body>
+</html>
